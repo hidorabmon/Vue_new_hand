@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Dynamic CSS.css">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h1>Conditionals</h1>
+    <button v-on:click="error =!error">Toggle Error</button>
+    <button v-on:click="Sucess =!Sucess">Toggle Sucess</button>
+<!--
+    <p V-if="error">There has been an error</p>
+    <p V-else-if="Sucess">你看不見我</p>
+-->
+    <p V-show="error">There has been an error</p>
+    <p V-show="Sucess">你看不見我</p>
+  </div>
+
+  <script src="Conditionals_app.js"></script>
+</body>
+</html>
